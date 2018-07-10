@@ -19,23 +19,24 @@ namespace PictureViewer
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-
+            // No code needed here for this sample.
         }
-        
+
         private void showButton_Click(object sender, EventArgs e)
         {
-            // Show the Open File dialog. If the user clicks OK, load picture of user's choice
+            // Show the Open File dialog. If the user chooses OK, load the 
+            // picture that the user chose.
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Load(openFileDialog1.FileName);
-
             }
+
         }
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            // Clear the picture
-            pictureBox1.Image = null;    
+            // Clear the picture.
+            pictureBox1.Image = null;
         }
 
         private void backgroundButton_Click(object sender, EventArgs e)
@@ -48,7 +49,7 @@ namespace PictureViewer
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            // Close the form.
+            // Close the form. 
             this.Close();
         }
 
